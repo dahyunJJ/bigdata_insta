@@ -1,0 +1,223 @@
+@charset "utf-8";
+
+:root {
+  --body-bg: #fafafa;
+  --box-bg: #fff;
+  --box-border-color: #dbdbdb;
+  --txt-color: #262626;
+  --txt-second-color: #8e8e8e;
+  --btn-bg: #0095f6;
+  --btn-color: #fff;
+  --fb-color: #385185;
+  --a-color: #00376b;
+}
+
+.dark {
+  --body-bg: #151515;
+  --box-bg: #151515;
+  --box-border-color: #262626;
+  --txt-color: #d2d2d2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: var(--txt-color);
+}
+
+body.dark {
+  background-color: var(--body-bg);
+  color: var(--txt-color);
+}
+
+.signin-con {
+  width: 400px;
+  margin: 50px auto 0;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid var(--box-border-color);
+  background-color: var(--box-bg);
+}
+
+.logo {
+  width: 240px;
+  height: 100px;
+  margin: 20px auto;
+}
+.logo img {
+  width: 100%;
+}
+
+.dark-logo {
+  display: none;
+}
+body.dark .light-logo {
+  display: none;
+}
+body.dark .dark-logo {
+  display: block;
+}
+
+#login {
+  width: 100%;
+}
+
+.id-box,
+.pw-box {
+  margin: 4px 0;
+  position: relative;
+}
+.id-box span,
+.pw-box span {
+  /* border: 1px solid red; */
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 50%;
+  font-size: 14px;
+  padding-left: 20px;
+  color: var(--txt-second-color);
+  pointer-events: none;
+}
+.id-box span.position,
+.pw-box span.position {
+  top: 0;
+  transform: translateY(0);
+  font-size: 12px;
+}
+.pw-box .pw-mode {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+}
+.pw-box .pw-mode.hide {
+  display: none;
+}
+
+#userid,
+#userpw,
+#submit-btn {
+  width: 100%;
+  height: 40px;
+  border: 1px solid var(--box-border-color);
+  border-radius: 4px;
+}
+#userid,
+#userpw {
+  /* border: 1px solid red; */
+  padding-left: 20px;
+  padding-top: 10px;
+}
+#submit-btn {
+  background-color: var(--btn-bg);
+  color: var(--btn-color);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.divider {
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 14px;
+  color: var(--txt-second-color);
+  position: relative;
+}
+.divider::before,
+.divider::after {
+  content: "";
+  border-bottom: 1px solid var(--box-border-color);
+  width: 120px;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+}
+.divider::before {
+  left: 0;
+}
+.divider::after {
+  right: 0;
+}
+
+.facebook-link {
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.facebook-link img {
+  width: 20px;
+}
+.facebook-link span {
+  color: var(--fb-color);
+  font-weight: 700;
+  padding-left: 10px;
+}
+
+.facebook-link + a {
+  font-size: 14px;
+}
+.facebook-link + a:hover {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.signup-con {
+  width: 400px;
+  text-align: center;
+  margin: 10px auto;
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid var(--box-border-color);
+  background-color: var(--box-bg);
+}
+.signup-con a {
+  color: var(--btn-bg);
+  font-weight: 700;
+}
+
+.download-con {
+  width: 400px;
+  margin: 10px auto;
+
+  text-align: center;
+}
+.download-con p {
+  padding: 20px 0;
+}
+
+.download-con a img {
+  width: 160px;
+}
+
+.bottom-links {
+  width: 80%;
+  margin: 40px auto 0;
+  text-align: center;
+  font-size: 14px;
+}
+.bottom-links .links a {
+  color: var(--txt-second-color);
+  padding: 0 4px;
+}
+.bottom-links .links a:hover {
+  text-decoration: underline;
+}
+.bottom-links p {
+  color: var(--txt-second-color);
+  padding: 10px 0;
+}
