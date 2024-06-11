@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- css / js -->
+    <link rel="stylesheet" href="./practice/style.css" />
+    <script src="./practice/script.js" defer></script>
+    <title>Instagram | 로그인</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="signin-con">
+        <h1 class="logo">
+          <img
+            class="light-logo"
+            src="./assets/images/logo-light.png"
+            alt="logo-light"
+          />
+          <img
+            class="dark-logo"
+            src="./assets/images/logo-dark.png"
+            alt="logo-dark"
+          />
+        </h1>
+        <form id="login" action="" method="get">
+          <div class="id-box">
+            <input type="text" name="userid" id="userid" />
+            <span>전화번호, 사용자 이름 또는 이메일</span>
+          </div>
+          <div class="pw-box">
+            <input type="password" name="userpw" id="userpw" />
+            <span>비밀번호</span>
+            <button class="pw-mode hide">비밀번호 표시</button>
+          </div>
+          <button id="submit-btn" type="submit" disabled>로그인</button>
+        </form>
+        <p class="divider">또는</p>
+        <a href="#" class="facebook-link">
+          <img src="./assets/images/facebook-icon.png" alt="facebook-icon" />
+          <span>Facebook으로 로그인</span>
+        </a>
+        <a href="#">비밀번호를 잊으셨나요?</a>
+      </div>
+      <div class="signup-con">
+        <span>계정이 없으신가요?</span>
+        <a href="#">가입하기</a>
+      </div>
+      <div class="download-con">
+        <p>앱을 다운로드하세요.</p>
+        <a href="#">
+          <img src="./assets/images/app-store.png" alt="app-store" />
+        </a>
+        <a href="#">
+          <img src="./assets/images/gg-play.png" alt="gg-play" />
+        </a>
+      </div>
+    </div>
+    <div class="bottom-links">
+      <div class="links">
+        <a href="#">Meta</a>
+        <a href="#">소개</a>
+        <a href="#">블로그</a>
+        <a href="#">채용 정보</a>
+        <a href="#">도움말</a>
+        <a href="#">API</a>
+        <a href="#">개인정보처리방침</a>
+        <a href="#">약관</a>
+        <a href="#">위치</a>
+        <a href="#">Instagram Lite</a>
+        <a href="#" class="darkmode-btn">Darkmode</a>
+      </div>
+      <p>© 2024 Instagram from Meta</p>
+    </div>
+  </body>
+</html>
