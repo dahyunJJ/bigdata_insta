@@ -22,25 +22,15 @@ let userPw = document.getElementById("userpw");
 let idSpan = document.querySelector(".id-box span");
 let pwSpan = document.querySelector(".pw-box span");
 
-// 비밀번호 표시 or 숨기기
 let pwBtn = document.querySelector(".pw-mode");
 
 userId.addEventListener("keyup", () => {
-  if (userId.value === "") {
-    idSpan.classList.remove("position");
-  } else {
-    idSpan.classList.add("position");
-  }
+  idSpan.classList.toggle("position", userId.value !== "");
 });
 
 userPw.addEventListener("keyup", () => {
-  if (userPw.value === "") {
-    pwSpan.classList.remove("position");
-    pwBtn.classList.add("hide");
-  } else {
-    pwSpan.classList.add("position");
-    pwBtn.classList.remove("hide");
-  }
+  pwSpan.classList.toggle("position", userPw.value !== "");
+  pwBtn.classList.toggle("hide", pwBtn.value !== "");
 });
 
 // 비밀번호 표시 or 숨기기
