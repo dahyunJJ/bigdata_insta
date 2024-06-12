@@ -14,8 +14,8 @@
 
 .dark {
   --body-bg: #151515;
-  --box-bg: #151515;
-  --box-border-color: #262626;
+  --box-bg: #353535;
+  --box-border-color: #666565;
   --txt-color: #d2d2d2;
 }
 
@@ -33,6 +33,13 @@ a {
 body.dark {
   background-color: var(--body-bg);
   color: var(--txt-color);
+}
+
+.btn-blue {
+  background-color: var(--btn-bg);
+  color: var(--btn-color);
+  font-weight: 700;
+  cursor: pointer;
 }
 
 .signin-con {
@@ -118,12 +125,6 @@ body.dark .dark-logo {
   /* border: 1px solid red; */
   padding-left: 20px;
   padding-top: 10px;
-}
-#submit-btn {
-  background-color: var(--btn-bg);
-  color: var(--btn-color);
-  font-weight: 700;
-  cursor: pointer;
 }
 
 .divider {
