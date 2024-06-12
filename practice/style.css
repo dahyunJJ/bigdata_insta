@@ -70,13 +70,11 @@ body.dark .dark-logo {
   width: 100%;
 }
 
-.id-box,
-.pw-box {
+.input-box {
   margin: 4px 0;
   position: relative;
 }
-.id-box span,
-.pw-box span {
+.input-box span {
   /* border: 1px solid red; */
   position: absolute;
   top: 50%;
@@ -88,10 +86,10 @@ body.dark .dark-logo {
   padding-left: 20px;
   color: var(--txt-second-color);
   pointer-events: none;
+  transition: 200ms;
 }
-.id-box span.position,
-.pw-box span.position {
-  top: 0;
+.input-box span.position {
+  top: 2px;
   transform: translateY(0);
   font-size: 12px;
 }
