@@ -53,3 +53,16 @@ pwBtn.addEventListener("click", (e) => {
     pwBtn.textContent = "비밀번호 표시";
   }
 });
+
+// 비밀번호 정규식
+function handleCheck(e) {
+  let pw = e.target.value;
+  let pwdCheck = /^(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[!@#$%^*+=-]).{8,16}$/;
+
+  if (pw.length > 0 && !pwdCheck.test(pw)) {
+    alert("비밀번호를 확인해주세요.");
+    return false;
+  }
+}
+
+userPw.addEventListener("focusout", handleCheck);
