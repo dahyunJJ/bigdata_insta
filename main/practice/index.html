@@ -24,6 +24,7 @@
     ></script>
     <title>Instagram</title>
     <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
   </head>
   <body>
     <header>
@@ -53,7 +54,9 @@
             </div>
             <i class="fa-solid fa-ellipsis"></i>
           </div>
-          <img class="post-img" src="../images/멍.jpeg" alt="post-img1" />
+          <div class="post-img">
+            <img src="../images/멍.jpeg" alt="post-img1" />
+          </div>
           <div class="comment-box">
             <div class="post-icon">
               <i class="fa-regular fa-heart"></i>
@@ -96,7 +99,9 @@
             </div>
             <i class="fa-solid fa-ellipsis"></i>
           </div>
-          <img class="post-img" src="../images/멍1.jpeg" alt="post-img1" />
+          <div class="post-img">
+            <img src="../images/멍1.jpeg" alt="post-img1" />
+          </div>
           <div class="comment-box">
             <div class="post-icon">
               <i class="fa-regular fa-heart"></i>
@@ -168,5 +173,55 @@
         </article>
       </section>
     </main>
+
+    <div class="upload-wrapper">
+      <button class="post-close-btn" type="button">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="upload-option">
+        <form class="upload-form" action="">
+          <p>새 게시물 만들기</p>
+
+          <div class="upload-img-preview">
+            <div class="upload-img">
+              <img src="../images/upload.png" alt="upload-img" />
+            </div>
+            <p>포스트 이미지 추가</p>
+            <canvas id="img-canvas"></canvas>
+          </div>
+
+          <div class="upload-file">
+            <input id="file-upload-btn" type="file" required />
+          </div>
+
+          <div class="upload-txt">
+            <textarea
+              name="content"
+              id="text-field"
+              cols="50"
+              rows="5"
+              placeholder="문구를 입력하세요..."
+            ></textarea>
+          </div>
+
+          <button class="submit_btn btn-blue" type="submit">공유하기</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="post-option">
+      <ul>
+        <li>삭제</li>
+        <li>수정</li>
+        <li>다른 사람에게 좋아요 수 숨기기</li>
+        <li>댓글 기능 해제</li>
+        <li>게시물로 이동</li>
+        <li>공유 대상...</li>
+        <li>링크 복사</li>
+        <li>퍼가기</li>
+        <li class="option-close-btn">취소</li>
+      </ul>
+    </div>
   </body>
 </html>
